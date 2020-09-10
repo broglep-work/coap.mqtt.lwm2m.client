@@ -247,3 +247,7 @@ var commands = {
 lwm2mClient.init(client_config);
 
 clUtils.initialize(commands, 'LWM2M-Client> ');
+
+process.on('uncaughtException', function (err) {
+    console.error('Uncaught exception:', err);
+});
