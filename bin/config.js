@@ -6,8 +6,8 @@ config.lwm2mServer = {
     udpWindow: 100,
     defaultType: 'Device',
     logLevel: 'DEBUG',
-    ipProtocol: 'udp4',
-    serverProtocol: 'udp4',
+    ipProtocol: 'udp6',
+    serverProtocol: 'udp6',
     formats: [
         {
             name: 'application-vnd-oma-lwm2m/text',
@@ -35,8 +35,8 @@ config.lwm2mclient={
     observe: {
         period: 3000
     },
-    ipProtocol: 'udp4',
-    serverProtocol: 'udp4',
+    ipProtocol: 'udp6',
+    serverProtocol: 'udp6',
     formats: [
         {
             name: 'lightweightm2m/text',
